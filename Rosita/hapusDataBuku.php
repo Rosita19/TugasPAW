@@ -6,7 +6,7 @@
 	$query = "DELETE FROM tbl_002 WHERE kd_buku = '$kd_buku'";
 	$sql = mysqli_query($konek, $query);
 	if ($sql) {
-		header("location:dataBuku.php");
+		echo "<script>alert('Berhasil Menghapus Data');window.location = 'dataBuku.php'</script>";
 	}else{
 		echo "Gagal menghapus";
 		echo "</br><a href = 'hapusDataBuku.php'>Kembali ke dataBuku</a>";
