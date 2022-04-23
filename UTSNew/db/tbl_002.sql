@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 02 Apr 2022 pada 12.26
+-- Waktu pembuatan: 23 Apr 2022 pada 08.49
 -- Versi server: 10.4.21-MariaDB
 -- Versi PHP: 8.0.11
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `rosita`
+-- Database: `db_rosita`
 --
 
 -- --------------------------------------------------------
@@ -28,25 +28,18 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `tbl_002` (
-  `kd_buku` varchar(10) NOT NULL,
-  `judul_buku` varchar(50) NOT NULL,
-  `pengarang` varchar(50) NOT NULL,
-  `penerbit` varchar(50) NOT NULL,
-  `tahun` int(10) NOT NULL,
-  `harga` int(30) NOT NULL
+  `id_002` varchar(10) NOT NULL,
+  `nama_002` varchar(50) NOT NULL,
+  `email_002` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data untuk tabel `tbl_002`
 --
 
-INSERT INTO `tbl_002` (`kd_buku`, `judul_buku`, `pengarang`, `penerbit`, `tahun`, `harga`) VALUES
-('B001', 'Tips Membuat Kue', 'S zainal', 'erlangga', 2010, 50000),
-('B002', 'Ketika Matahari Terbenam', 'susilawati', 'gramedia', 2009, 60000),
-('B003', 'Matematika', 'Alifdianti Rahmawati', 'Republika', 2020, 55000),
-('B004', 'Bahasa Inggris', 'Kholifatunnajah', 'Gramedia', 2018, 60000),
-('B005', 'Pintar Membaca', 'Agus Setiawan', 'Erlangga', 2019, 45000),
-('B006', 'Mariposa', 'albi fabian', 'Gramedia', 2009, 90000);
+INSERT INTO `tbl_002` (`id_002`, `nama_002`, `email_002`) VALUES
+('101', 'Rosita Dewi Lutfiyah', 'dewilutfiyah@gmail.com'),
+('102', 'dewi Lutfiyah', 'lutfiyah@gmail.com');
 
 --
 -- Indexes for dumped tables
@@ -56,7 +49,7 @@ INSERT INTO `tbl_002` (`kd_buku`, `judul_buku`, `pengarang`, `penerbit`, `tahun`
 -- Indeks untuk tabel `tbl_002`
 --
 ALTER TABLE `tbl_002`
-  ADD PRIMARY KEY (`kd_buku`);
+  ADD PRIMARY KEY (`id_002`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
